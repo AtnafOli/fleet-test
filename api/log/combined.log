@@ -174,3 +174,4 @@
 {"level":"info","message":"Received request: OPTIONS /api/vehicles","timestamp":"2024-12-13T10:59:56.395Z"}
 {"level":"info","message":"Received request: POST /api/vehicles","timestamp":"2024-12-13T10:59:56.396Z"}
 {"level":"info","message":"Received request: GET /api/vehicles","timestamp":"2024-12-13T10:59:56.419Z"}
+{"level":"info","message":"Server running on port 8005","timestamp":"2024-12-13T11:34:32.082Z"}
