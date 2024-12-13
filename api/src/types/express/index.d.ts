@@ -1,12 +1,9 @@
-import { AdvancedResults, User } from "../interfaces"; 
+import { AdvancedResults } from "../interfaces";
 
 declare global {
   namespace Express {
     interface Response {
       advancedResults?: AdvancedResults;
-    }
-    interface Request {
-      user?: User;
     }
   }
 }

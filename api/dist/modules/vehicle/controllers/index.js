@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getResultVehicles = exports.deleteVehicle = exports.updateVehicle = exports.createVehicle = void 0;
+const VehicleCreateController_1 = require("./VehicleCreateController");
+Object.defineProperty(exports, "createVehicle", { enumerable: true, get: function () { return VehicleCreateController_1.createVehicle; } });
+const VehicleUpdateController_1 = require("./VehicleUpdateController");
+Object.defineProperty(exports, "updateVehicle", { enumerable: true, get: function () { return VehicleUpdateController_1.updateVehicle; } });
+const VehicleDeleteController_1 = require("./VehicleDeleteController");
+Object.defineProperty(exports, "deleteVehicle", { enumerable: true, get: function () { return VehicleDeleteController_1.deleteVehicle; } });
+const VehicleGetController_1 = require("./VehicleGetController");
+Object.defineProperty(exports, "getResultVehicles", { enumerable: true, get: function () { return VehicleGetController_1.getResultVehicles; } });
