@@ -19,7 +19,9 @@ app.use((0, cors_1.default)({
     origin: [
         ...Array.from({ length: 65535 }, (_, i) => `http://localhost:${i + 1}`),
         "https://nice-events.vercel.app",
-        "http://localhost:3000",
+        "https://fleet-test-six.vercel.app",
+        "https://fleet-test-g673.onrender.com",
+        "https://fleet-test-six.onrender.com",
     ],
     credentials: true,
 }));
@@ -33,7 +35,7 @@ app.use(not_found_1.notFoundHandler);
 app.use((err, req, res, next) => {
     (0, errorHandler_1.errorHandler)(err, req, res, next);
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8005;
 app.listen(PORT, () => {
     logger_1.default.info(`Server running on port ${PORT}`);
 });
