@@ -22,6 +22,7 @@ app.use(
       ...Array.from({ length: 65535 }, (_, i) => `http://localhost:${i + 1}`),
       "https://nice-events.vercel.app",
       "http://localhost:3000",
+      "https://fleet-test-six.vercel.app",
     ],
     credentials: true,
   })
