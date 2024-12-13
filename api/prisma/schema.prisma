@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Vehicles {
+  id          Int           @id @default(autoincrement())
+  plateNumber String
+  name        String
+  status      VehicleStatus
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("vehicles")
+}
+
+enum VehicleStatus {
+  AVAILABLE
+  PENDING
+  SOLD
+  INACTIVE
+}
