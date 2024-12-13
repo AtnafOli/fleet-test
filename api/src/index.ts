@@ -21,8 +21,9 @@ app.use(
     origin: [
       ...Array.from({ length: 65535 }, (_, i) => `http://localhost:${i + 1}`),
       "https://nice-events.vercel.app",
-      "http://localhost:3000",
       "https://fleet-test-six.vercel.app",
+      "https://fleet-test-g673.onrender.com",
+      "https://fleet-test-six.onrender.com",
     ],
     credentials: true,
   })
@@ -49,7 +50,7 @@ app.use(
   }
 );
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8005;
 
 app.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
