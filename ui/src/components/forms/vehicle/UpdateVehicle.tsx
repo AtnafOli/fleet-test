@@ -168,8 +168,7 @@ export function UpdateVehicleForm({
                             className={cn(
                               "w-2 h-2 rounded-full",
                               status === StatusEnum.Available && "bg-green-500",
-                              status === StatusEnum.Active && "bg-yellow-500",
-                              status === StatusEnum.InActive && "bg-red-500",
+                              status === StatusEnum.InActive && "bg-yellow-500",
                               status === StatusEnum.Pending && "bg-blue-500",
                               status === StatusEnum.Sold && "bg-gray-500"
                             )}
